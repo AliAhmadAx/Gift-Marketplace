@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import "./paginationButtons.css";
-import { confirmAlert } from "react-confirm-alert";
+import React from "react";
 import "react-confirm-alert/src/react-confirm-alert.css";
 import {
   FaAngleRight,
@@ -9,8 +7,6 @@ import {
   FaAngleDoubleRight,
 } from "react-icons/fa";
 const PaginationButtons = (props) => {
-  // console.log(props, "pafffff")
-
   var numbers = 0;
   var page = -props.NumberOfRecordsPerPage;
   var onlyNumbers = /^\d+$/;
