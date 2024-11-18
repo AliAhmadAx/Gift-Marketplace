@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+.dYrfwz {
+  position: relative;
+  border: 2px solid black !important;
+  border-radius: 8px !important;
+}
+.jiMOeR .wrapper {
+  border-radius: 13px !important;
+}
+.jVORrT {
+  display: none !important;
+  /* right: 0px !important;
+  justify-content: center;
+  position: absolute !important;
+  padding: 22px 30px;
+  padding: 22px;
+  border: 2px solid black !important;
+  border-radius: 8px !important;
+  transform: translate(1px, 0px); */
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px 35px 10px 35px;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  /* appearance: none; */
+  width: 16px;
+  height: 16px;
+  margin-right:90px;
+  background-image: url("path/to/your/clear-icon.png");
+  /* background-color: red; */
+  color: black !important;
+  background-size: cover;
+  cursor: pointer;
+  display: block !important;
+
+}
+
+input::placeholder {
+  color: black; /* Change the color to your desired value */
+  /* Add more custom styles here */
+}
+.autocomplete-container {
+  position: relative;
+  width: 100%;
+margin-left: auto;
+margin-right: auto;
+  margin-top: 20px;
+}
+
+input[type="search"] {
+  width: 100%;
+  /* height: 32px; */
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 8px;
+  
+ 
+}
+input:focus {
+  outline: none;
+}
+.suggestions-container {
+  position: absolute;
+  /* top: 38px; */
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: none;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 4px 6px rgba(32, 33, 36, 0.28);
+  z-index: 2;
+}
+
+.suggestion {
+  padding: 4px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.suggestion:hover {
+  background-color: #f5f5f5;
+}
+
+.suggestion:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.suggestion:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.suggestion.highlighted {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.css-1u9des2-indicatorSeparator{
+  display: none;
+}

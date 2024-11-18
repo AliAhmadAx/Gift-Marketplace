@@ -1,0 +1,92 @@
+#root {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+*{
+  --bg-yellow: #E7AB3C;
+  --bg-yellow-transparent: #ffffff;
+}
+
+.yellow-color {
+  background-color: var(--bg-yellow);
+}
+
+.yellow-color-transparent {
+  background-color: var(--bg-yellow-transparent);
+  color: black;
+
+}
+
+.yellow-color-text {
+  color: var(--bg-yellow);
+}
+
+.gift-background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0)), url("https://images.unsplash.com/photo-1453834190665-46ff0a1fbd5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gift-box-background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0)), url("https://plus.unsplash.com/premium_photo-1667516819660-004e6653e1e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.droplet-shadows {
+  box-shadow: inset 6px 6px 15px rgba(235, 244, 249, 0.582) !important;
+
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+#search-dropdown:required:invalid + button {
+  display: none;
+}
+.hero-img {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1495522097160-b7d527cc67f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ 
+}
