@@ -301,11 +301,6 @@ const AllGifts = () => {
           >
             Filters <BsFilter className="cursor-pointer text-lg ml-2" />{" "}
           </button>
-          {/* {!loader ? (
-            <>
-              <SearchSkeleton />
-            </>
-          ) :  */}
           {products && products.length > 0 ? (
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {products.map((item) => (
