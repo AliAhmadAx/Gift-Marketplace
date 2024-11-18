@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import TotalServices from "../TotalService";
-import SearchSkeleton from "../components/skeleton/searchSkeleton";
 import SearchResults from "../components/SearchResults/SearchResults";
 import Filters from "../components/Filters/Filters";
 import Pagination from "../components/Pagination/Pagination";
@@ -9,16 +8,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet";
 import { BsFilter } from "react-icons/bs";
-import { IoIosGitCompare } from "react-icons/io";
-import { Tooltip } from "react-tooltip";
-import { AiOutlineClear } from "react-icons/ai";
-import { useContext } from "react";
-import { ThemeContext } from "../App";
 
 const Search = () => {
-  const navigate = useNavigate();
-  const inputRef = useRef(null);
-
   const params = useParams();
 
   const [CategoryFilter, setCategoryFilter] = useState([]);
@@ -55,14 +46,6 @@ const Search = () => {
       sendDataToBackend(searchParams);
     }
   }, [params.query]);
-
-  // useEffect(() => {
-  //   if (inputValue) {
-  //     fetchSuggestions(inputValue);
-  //   } else {
-  //     setSuggestions([]);
-  //   }
-  // }, [inputValue]);
 
   useEffect(() => {
     if (
@@ -255,11 +238,7 @@ const Search = () => {
           >
             Filters <BsFilter className="cursor-pointer text-lg ml-2" />{" "}
           </button>
-          {loader ? (
-            <>
-              <SearchSkeleton />
-            </>
-          ) : data && data.length > 0 ? (
+          {data && data.length > 0 ? (
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {data.map((item) => (
                 <div key={item._id}>

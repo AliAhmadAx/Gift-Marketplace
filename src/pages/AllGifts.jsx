@@ -1,18 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import TotalServices from "../TotalService";
-import SearchSkeleton from "../components/skeleton/searchSkeleton";
 import SearchResults from "../components/SearchResults/SearchResults";
 import Pagination from "../components/Pagination/Pagination";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet";
 import { BsFilter } from "react-icons/bs";
-import { IoIosGitCompare } from "react-icons/io";
-import { Tooltip } from "react-tooltip";
-import { AiOutlineClear } from "react-icons/ai";
-import { useContext } from "react";
-import { ThemeContext } from "../App";
 import AllProductsFilters from "../components/Filters/AllProductsFilters";
 
 const products = [
@@ -99,7 +93,6 @@ const AllGifts = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [loader, setLoader] = useState(false);
   const [totalFavorites, setTotalFavorites] = useState(0);
-  // const [filterSelected, setFilterSelected] = useState(10);
   const [totalRecords, setTotalRecords] = useState("");
   const [record, setRecord] = useState(0);
   const [NumberOfRecordsPerPage] = useState(10);
@@ -107,7 +100,6 @@ const AllGifts = () => {
   const [goto, setGoto] = useState("");
   const [totalPages, setTotalPages] = useState(1);
   const [data, setData] = useState("");
-  const [nextWord, setNextWord] = useState("");
   const [favoriteList, setFavoriteList] = useState([]);
 
   const [collapseMenu, setCollapseMenu] = useState(true);
